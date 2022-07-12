@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import Logo from "../assets/JOO_.png";
-import SearchContainer from "./SearchContainer";
 
 export default function AppHeader({ seo }) {
   return (
@@ -38,10 +36,10 @@ export default function AppHeader({ seo }) {
                   className="bd-tw-button button"
                   data-social-network="Twitter"
                   data-social-action="tweet"
-                  data-social-target="https://eincode.com"
+                  data-social-target="https://codecademia.gatsbyjs.io/"
                   rel="noreferrer"
                   target="_blank"
-                  href={`https://twitter.com/intent/tweet?text=Hello World&hashtags=eincode&url=https://eincode.com`}
+                  href={`https://twitter.com/intent/tweet?text=HelloWorld&hashtags=codecademia&url=https://codecademia.gatsbyjs.io/`}
                 >
                   <span>Tweet</span>
                 </a>
