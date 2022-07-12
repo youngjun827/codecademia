@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     const page = i + 1;
 
     createPage({
-      path: page == 1 ? `/blogs/` : `/blogs/${page}`,
+      path: page === 1 ? `/blogs` : `/blogs/${page}`,
       component: require.resolve("./src/templates/blogsPaginated.js"),
       context: {
         limit: itemsPerPage,

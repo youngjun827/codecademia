@@ -18,9 +18,9 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
-    `gatsby-plugin-sitemap`,
+    "gatsby-plugin-sitemap",
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: "gatsby-plugin-feed",
       options: rss.options,
     },
     // Change file to file nodes
