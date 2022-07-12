@@ -56,7 +56,7 @@ export default function SearchContainer({ searchIndex }) {
       <input
         onChange={performSearch}
         value={search.query}
-        style={{ width: "200px" }}
+        style={{ width: "928px" }}
         className="input"
         type="text"
         placeholder="Search"
