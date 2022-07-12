@@ -50,11 +50,6 @@ export default function AppHeader({ seo }) {
                   <span>Tweet</span>
                 </a>
               </p>
-              <p className="control">
-                <a className="button is-primary" href="/">
-                  <span>Login</span>
-                </a>
-              </p>
             </div>
           </div>
         </div>

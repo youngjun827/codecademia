@@ -33,6 +33,7 @@ function SEO({ title, image, description, meta = [] }) {
           name: "description",
           content: defaultDescription,
         },
+        // <meta name="google-site-verification" content="nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg" />
         {
           name: "google-site-verification",
           content: "nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg",
