@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "gatsby";
 
 export default function AppHeader({ seo }) {
@@ -8,6 +8,8 @@ export default function AppHeader({ seo }) {
 
   const twitterUrl = seo?.url || "";
 
+  const [isActive, setisActive] = useState(false);
+
   return (
     <nav className="navbar is-transparent mb-5 p-5">
       <div className="navbar-brand">
@@ -15,7 +17,11 @@ export default function AppHeader({ seo }) {
           <h1 className="title">Codecademia</h1>
         </Link>
         <div
-          className="navbar-burger"
+          onClick={() => {
+            setisActive(!isActive);
+          }}
+          role="button"
+          className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           data-target="navbarExampleTransparentExample"
         >
           <span></span>
@@ -24,7 +30,10 @@ export default function AppHeader({ seo }) {
         </div>
       </div>
 
-      <div id="navbarExampleTransparentExample" className="navbar-menu">
+      <div
+        id="navbarExampleTransparentExample"
+        className={`navbar-menu ${isActive ? "is-active" : ""}`}
+      >
         <div className="navbar-start">
           <Link className="navbar-item" to="/">
             Home
