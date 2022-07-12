@@ -33,6 +33,10 @@ function SEO({ title, image, description, meta = [] }) {
           name: "description",
           content: defaultDescription,
         },
+        {
+          name: "google-site-verification",
+          content: "nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg",
+        },
         // Open Graph
         {
           name: "og:title",
