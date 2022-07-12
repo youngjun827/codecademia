@@ -18,6 +18,7 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-sass",
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-feed`,
       options: rss.options,
@@ -56,6 +57,19 @@ module.exports = {
         theme_color: `#a2466c`,
         display: `standalone`,
         icon: "src/assets/JOO_.png",
+        icons: [
+          {
+            src: "src/assets/JOO_.png",
+            sizes: "1945x1945",
+            type: "image/png",
+          },
+          {
+            src: "src/assets/maskable_icon_x192.png",
+            sizes: "192x192",
+            type: "image/png",
+            purpose: "any maskable",
+          },
+        ],
       },
     },
     `gatsby-plugin-offline`,

@@ -5,10 +5,12 @@ date: 2022-06-10
 slug: learn-program-in-js
 author: Young Jun Joo
 rating: 3
-coverImage: "https://miro.medium.com/max/800/1*JTVWHBtzlA9P6iKMxCF2yQ.png"
+coverImage: https://miro.medium.com/max/800/1*JTVWHBtzlA9P6iKMxCF2yQ.png
 ---
 
 ## Emphasis
+
+![alt text](https://miro.medium.com/max/800/1*JTVWHBtzlA9P6iKMxCF2yQ.png "Learn JavaScript")
 
 **This is bold text**
 **This is bold text**

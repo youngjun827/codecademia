@@ -2,6 +2,12 @@ import React from "react";
 import { Link } from "gatsby";
 
 export default function AppHeader({ seo }) {
+  const twitterMessage = seo?.title
+    ? `Check out "${seo.title}" at`
+    : "Join Codecademia!";
+
+  const twitterUrl = seo?.url || "";
+
   return (
     <nav className="navbar is-transparent mb-5 p-5">
       <div className="navbar-brand">
@@ -39,7 +45,7 @@ export default function AppHeader({ seo }) {
                   data-social-target="https://codecademia.gatsbyjs.io/"
                   rel="noreferrer"
                   target="_blank"
-                  href={`https://twitter.com/intent/tweet?text=HelloWorld&hashtags=codecademia&url=https://codecademia.gatsbyjs.io/`}
+                  href={`https://twitter.com/intent/tweet?text=${twitterMessage}&hashtags=codecademia&url=${process.env.BASE_URL}${twitterUrl}`}
                 >
                   <span>Tweet</span>
                 </a>

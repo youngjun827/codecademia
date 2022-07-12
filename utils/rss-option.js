@@ -3,11 +3,11 @@ module.exports = {
     feeds: [
       {
         serialize: ({ query: { allMarkdownRemark } }) => {
-          return allMarkdownRemark.nodes.map((node) => {
-            const url = `${process.env.BASE_URL}/blogs/${node.frontmatter.slug}`;
+          return allMarkdownRemark.edges.map(({ node }) => {
+            const url = `${process.env.BASE_URL}/blogs/${node.frontmatter.slug}/`;
             return Object.assign({}, node.frontmatter, {
               description: node.frontmatter.subtitle,
-              url: url,
+              url,
               guid: url,
               custom_elements: [{ "content:encoded": node.html }],
             });
@@ -18,13 +18,15 @@ module.exports = {
           allMarkdownRemark(
             sort: { order: DESC, fields: [frontmatter___date] },
           ) {
-            nodes {
-              excerpt
-              html
-              frontmatter {
-                title
-                date
-                slug
+            edges {
+              node {
+                html
+                frontmatter {
+                  title
+                  subtitle
+                  slug
+                  date
+                }
               }
             }
           }
@@ -32,6 +34,7 @@ module.exports = {
       `,
         title: "Codecademia",
         output: "/rss.xml",
+        match: "^/blogs/",
       },
     ],
   },
