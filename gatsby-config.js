@@ -46,5 +46,18 @@ module.exports = {
       },
     },
     "gatsby-plugin-react-helmet",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Codecademia`,
+        short_name: `Codecademia`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: "src/assets/JOO_.png",
+      },
+    },
+    `gatsby-plugin-offline`,
   ],
 };
