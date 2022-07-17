@@ -23,6 +23,7 @@ export default function AppHeader({ seo }) {
           role="button"
           className={`navbar-burger burger ${isActive ? "is-active" : ""}`}
           data-target="navbarExampleTransparentExample"
+          aria-label="Open the menu"
         >
           <span></span>
           <span></span>

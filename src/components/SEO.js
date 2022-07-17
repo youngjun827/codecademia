@@ -38,6 +38,11 @@ function SEO({ title, image, description, meta = [] }) {
           name: "google-site-verification",
           content: "nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg",
         },
+        //<meta name=”robots” content=”index, follow”>
+        {
+          name: "robots",
+          content: "index, follow",
+        },
         // Open Graph
         {
           name: "og:title",
