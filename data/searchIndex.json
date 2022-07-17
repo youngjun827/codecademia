@@ -19,6 +19,11 @@
       "slug": "learn-program-in-js",
       "title": "Learn Programming in JS",
       "subtitle": "learn programing, its super cool!"
+    },
+    {
+      "slug": "difference-between-forEach-and-map-method",
+      "title": "Difference between forEach & map method.",
+      "subtitle": "Learn the difference between the forEach and the map method and when to use either."
     }
   ]
 }

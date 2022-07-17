@@ -20,7 +20,7 @@ export default function Blog({ data }) {
   return (
     <Layout seo={seo}>
       <SEO {...seo} />
-      <h1>{title}</h1>
+      {/* <h1>{title}</h1> */}
       <div className="blog-content">
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
       </div>
