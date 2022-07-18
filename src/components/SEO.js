@@ -33,10 +33,10 @@ function SEO({ title, image, description, meta = [] }) {
           name: "description",
           content: defaultDescription,
         },
-        // <meta name="google-site-verification" content="nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg" />
+        // <meta name="google-site-verification" content="BHx4M5SwObMu0Sl7TqU6nXykFYcd7W1Vw12aQ_piw0Y" />
         {
           name: "google-site-verification",
-          content: "nw-_oViEDB0fPnAAzufuI9v92Plm3MlFgLxXhWpx5Gg",
+          content: "BHx4M5SwObMu0Sl7TqU6nXykFYcd7W1Vw12aQ_piw0Y",
         },
         //<meta name=”robots” content=”index, follow”>
         {
