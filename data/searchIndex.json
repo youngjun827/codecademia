@@ -24,6 +24,11 @@
       "slug": "difference-between-forEach-and-map-method",
       "title": "Difference between forEach & map method.",
       "subtitle": "Learn the difference between the forEach and the map method and when to use either."
+    },
+    {
+      "slug": "why-are-indexes-used-in-databases",
+      "title": "Learn indexes in databases",
+      "subtitle": "Learn why are indexes used in databases."
     }
   ]
 }
