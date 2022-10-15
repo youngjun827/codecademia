@@ -13,7 +13,7 @@ module.exports = {
       "An accessible platform dedicated to sharing refined and translated advanced computer science concepts to ease learning.",
     siteUrl: process.env.BASE_URL,
     body: {
-      content: "Some SEO content",
+      content: "Learn to code efficiently and accessibly.",
     },
   },
   plugins: [

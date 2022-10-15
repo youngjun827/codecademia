@@ -39,6 +39,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
   Array.from({ length: numOfPages }).forEach((_, i) => {
     const page = i + 1;
 
+    // Used for blogs pagination
     createPage({
       path: page === 1 ? `/blogs` : `/blogs/${page}`,
       component: require.resolve("./src/templates/blogsPaginated.js"),
@@ -51,6 +52,7 @@ exports.createPages = async ({ graphql, actions: { createPage } }) => {
     });
   });
 
+  // Used for blog creation
   nodes.forEach((node) => {
     createPage({
       path: `/blogs/${node.frontmatter.slug}`,
