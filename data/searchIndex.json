@@ -29,6 +29,11 @@
       "slug": "why-are-indexes-used-in-databases",
       "title": "Learn indexes in databases",
       "subtitle": "Learn why are indexes used in databases."
+    },
+    {
+      "slug": "what-is-the-difference-between-the-ES6-and-ES5-standards",
+      "title": "ES6 vs ES5 Standards",
+      "subtitle": "What is the difference between the ES6 and ES5 standards?"
     }
   ]
 }
