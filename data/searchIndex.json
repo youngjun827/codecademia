@@ -34,6 +34,11 @@
       "slug": "what-is-the-difference-between-the-ES6-and-ES5-standards",
       "title": "ES6 vs ES5 Standards",
       "subtitle": "What is the difference between the ES6 and ES5 standards?"
+    },
+    {
+      "slug": "learn-serverside-rendering-quick",
+      "title": "Serverside Rendering",
+      "subtitle": "What is serverside rendering?"
     }
   ]
 }
